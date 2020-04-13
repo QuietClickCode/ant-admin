@@ -1,6 +1,7 @@
 import React from 'react'
 import {Button, notification} from 'antd';
 import Background from './1.svg';
+
 const openNotification = () => {
     notification.open({
         message: 'Notification Title',
@@ -28,8 +29,9 @@ var sectionStyle = {
     width: "20%",
     height: "400px",
 // makesure here is String确保这里是一个字符串，以下是es6写法
-   backgroundImage: `url(${Background})`
+    backgroundImage: `url(${Background})`
 };
+
 class ProfileDemo extends React.Component {
 
     //渲染函数
@@ -56,13 +58,28 @@ class ProfileDemo extends React.Component {
                 <div>
                     {/*<div style={sectionStyle}></div>*/}
                     <div>
-                  <div style={{width:"60%",position:'absolute',left:'50%'}}><img src={require('./1.svg')} style={{width:'20%',height:'20%',}}/></div>
+                        <div style={{width: "60%", position: 'absolute', left: '50%'}}><img src={require('./1.svg')}
+                                                                                            style={{
+                                                                                                width: '20%',
+                                                                                                height: '20%',
+                                                                                            }}/></div>
 
-                    </div > <div  style={{fontSize:'1rem',width:"80%",position:'absolute',left:'50%'}}>dfjkas</div>
+                    </div>
+                    <div style={{fontSize: '1rem', width: "80%", position: 'absolute', left: '50%'}}>dfjkas</div>
+                    <div>
+                        <div style={{width: "60%", position: 'absolute', left: '70%'}}><img src={require('./1.svg')}
+                                                                                            style={{
+                                                                                                width: '20%',
+                                                                                                height: '20%',
+                                                                                            }}/></div>
 
-                    <img src={require('./1.svg')} style={{width:'20%',height:'20%',margin:'0px 10px'}}/>
-                    <img src={require('./1.svg')} style={{width:'20%',height:'20%',margin:'0px 10px'}}/>
-                    <img src={require('./1.svg')} style={{width:'calc(20% - 20px)',height:'20%',margin:'0px 10px'}}/>
+                    </div>
+                    <div style={{fontSize: '1rem', width: "80%", position: 'absolute', left: '70%'}}>dfjkas</div>
+
+                    <img src={require('./1.svg')} style={{width: '20%', height: '20%', margin: '0px 10px'}}/>
+                    <img src={require('./1.svg')} style={{width: '20%', height: '20%', margin: '0px 10px'}}/>
+                    <img src={require('./1.svg')}
+                         style={{width: 'calc(20% - 20px)', height: '20%', margin: '0px 10px'}}/>
                 </div>
             </div>
         )
