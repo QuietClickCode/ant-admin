@@ -48,6 +48,9 @@ const SiderMenus = ({ match }) => (
         <Menu.Item key="/profile">
           <Link to="/profile">个人信息</Link>
         </Menu.Item>
+        <Menu.Item key="/profileDemo">
+          <Link to="/profileDemo">个人信息demo</Link>
+        </Menu.Item>
       </SubMenu>
       <SubMenu
         key="sub3"
